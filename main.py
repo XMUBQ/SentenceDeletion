@@ -77,7 +77,6 @@ if __name__ == '__main__':
     test_mode = args.testmode
     if not test_mode:
         print(model_name)
-        best = 0
         for epoch in range(load_epoch+1, epochs):
             model.train()
             print("EPOCH -- {}".format(epoch))
